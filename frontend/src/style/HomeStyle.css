@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('https://t3.ftcdn.net/jpg/10/82/53/50/360_F_1082535075_jSNDcpDWYOBfA8DD4o9nVF27T8zH7feY.jpg') no-repeat center center/cover;
+  background-size: cover;
+  height:100vh;
+  color: #333;
+  line-height: 1.6;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* Adds a slight dark overlay */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #005bb5;
+}

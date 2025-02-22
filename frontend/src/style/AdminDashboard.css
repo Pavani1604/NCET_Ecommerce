@@ -1,0 +1,279 @@
+.admin-dashboard {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+/* Navbar at the Top */
+.admin-navbar {
+  position: fixed; /* Fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #007bff;
+  padding: 15px;
+  border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+  z-index: 1000; /* Ensures it stays on top */
+}
+
+.admin-navbar button {
+  background-color: white;
+  border: 2px solid #0056b3;
+  padding: 12px 25px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0056b3;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.admin-navbar button:hover {
+  background-color: #0056b3;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Add margin to push content down so it doesn't overlap the navbar */
+.admin-content {
+  margin-top: 80px; /* Adjust based on navbar height */
+}
+
+/* Home Page Background */
+.home-background {
+  background: url('https://t3.ftcdn.net/jpg/10/82/53/50/360_F_1082535075_jSNDcpDWYOBfA8DD4o9nVF27T8zH7feY.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Centered and Enlarged Description */
+.home-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 700px;
+}
+
+.home-content h3 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.home-content p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+/* Centering and Styling the Add Product Form */
+.add-product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Center the form properly */
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1); /* Soft gradient background */
+}
+
+/* Stylish Product Form */
+.product-form {
+  background: linear-gradient(135deg, #f6d365, #fda085); /* Vibrant gradient */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-form:hover {
+  transform: scale(1.03);
+}
+
+/* Input Fields */
+.product-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.product-form input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Submit Button */
+.product-form button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #667eea, #764ba2); /* Blue-purple gradient */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.product-form button:hover {
+  background: linear-gradient(135deg, #764ba2, #667eea);
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .product-form {
+    width: 90%;
+  }
+}
+/* Product Card Styling */
+.product-card {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Soft gradient background */
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover Effect */
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Product Image */
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  border: 3px solid #fff;
+}
+
+/* Product Name */
+.product-card h6 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Price Styling */
+.product-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2ecc71;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.product-description {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+.product-card button {
+  margin: 5px;
+  padding: 10px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+
+/* Edit Button */
+.product-card .edit-btn {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+.product-card .edit-btn:hover {
+  background: linear-gradient(135deg, #764ba2, #667eea);
+  transform: scale(1.1);
+}
+
+/* Delete Button */
+.product-card .delete-btn {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+}
+
+.product-card .delete-btn:hover {
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  transform: scale(1.1);
+}
+
+/* View Image Link */
+.product-link {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.product-link:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Animated Ribbon Tag */
+.product-card::before {
+  content: "NEW!";
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 15px;
+  position: absolute;
+  top: 10px;
+  left: -15px;
+  transform: rotate(-20deg);
+  border-radius: 5px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .product-card {
+    padding: 15px;
+  }
+
+  .product-card h6 {
+    font-size: 18px;
+  }
+
+  .product-description {
+    font-size: 14px;
+  }
+
+  .product-card button {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}

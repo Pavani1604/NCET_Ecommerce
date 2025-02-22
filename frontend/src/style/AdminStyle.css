@@ -1,0 +1,56 @@
+/* AdminDashboard.css */
+
+.product-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card .product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .product-card .product-header h4 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .product-card .product-price {
+    font-size: 1rem;
+    color: #2e7d32;
+    font-weight: bold;
+  }
+  
+  .product-card .product-description {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .product-card .product-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .product-card .product-footer span {
+    font-size: 0.85rem;
+    color: #888;
+  }
+  
+  .product-card .product-footer .stock {
+    font-weight: bold;
+  }
+  
+  .product-card .product-footer .category {
+    font-style: italic;
+  }
+  
